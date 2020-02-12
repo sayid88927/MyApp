@@ -1,11 +1,12 @@
 package com.app.service;
 
-import com.app.model.Toolbar;
+import com.app.model.TToolbar;
+
 
 import java.util.List;
 
 public interface ToolBarService {
 
-    List<Toolbar> findAll();
+    List<TToolbar> findAll();
 
 }

@@ -1,6 +1,6 @@
 package com.app.controller.home;
 
-import com.app.model.Toolbar;
+import com.app.model.TToolbar;
 import com.app.service.ToolBarService;
 import com.bben.common.BaseController;
 import com.bben.common.entity.vo.Result;
@@ -19,8 +19,8 @@ public class ToolBarController extends BaseController {
     private ToolBarService toolBarService;
 
     @GetMapping("/test")
-    public Result<List<Toolbar>> getBedInfo(){
-        List<Toolbar> ToolbarList = toolBarService.findAll();
+    public Result<List<TToolbar>> getBedInfo(){
+        List<TToolbar> ToolbarList = toolBarService.findAll();
         return Result.success("查询信息成功",ToolbarList);
     }
 

@@ -1,7 +1,7 @@
 package com.app.service.impl;
 
-import com.app.mapper.ToolbarMapper;
-import com.app.model.Toolbar;
+import com.app.mapper.TToolbarMapper;
+import com.app.model.TToolbar;
 import com.app.service.ToolBarService;
 import com.bben.common.util.A;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,12 +13,12 @@ import java.util.List;
 public class ToolBarServiceImpl implements ToolBarService {
 
     @Autowired
-    private ToolbarMapper toolbarMapper;
+    private TToolbarMapper toolbarMapper;
 
     @Override
-    public List<Toolbar> findAll() {
+    public List<TToolbar> findAll() {
 
-        List<Toolbar> tBedList = toolbarMapper.selectByExample(null);
+        List<TToolbar> tBedList = toolbarMapper.selectByExample(null);
         if (A.isEmpty(tBedList)){
             return null;
         }

@@ -1,9 +1,7 @@
 package com.app.controller.home;
 
-import com.app.model.Carousels;
-import com.app.model.Toolbar;
+import com.app.model.TCarousels;
 import com.app.service.CarouselsService;
-import com.app.service.ToolBarService;
 import com.bben.common.entity.vo.Result;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,8 +18,8 @@ public class CarouselsController {
     private CarouselsService carouselsService;
 
     @GetMapping("/info")
-    public Result<List<Carousels>> getBedInfo(){
-        List<Carousels> CarouselsList = carouselsService.findAll();
+    public Result<List<TCarousels>> getBedInfo(){
+        List<TCarousels> CarouselsList = carouselsService.findAll();
         return Result.success("查询信息成功",CarouselsList);
     }
 

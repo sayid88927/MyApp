@@ -58,12 +58,28 @@
         </javaClientGenerator>
 
 
-        <table tableName="toolbar">
+        <table tableName="t_toolbar">
             <!--&lt;!&ndash;&lt;!&ndash;mysql 配置 &ndash;&gt;&ndash;&gt;-->
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>
 
-        <table tableName="carousels">
+
+        <table tableName="t_carousels">
+            <!--&lt;!&ndash;&lt;!&ndash;mysql 配置 &ndash;&gt;&ndash;&gt;-->
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="t_grilimgs">
+            <!--&lt;!&ndash;&lt;!&ndash;mysql 配置 &ndash;&gt;&ndash;&gt;-->
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="t_imgurl">
+            <!--&lt;!&ndash;&lt;!&ndash;mysql 配置 &ndash;&gt;&ndash;&gt;-->
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+
+        <table tableName="t_tag">
             <!--&lt;!&ndash;&lt;!&ndash;mysql 配置 &ndash;&gt;&ndash;&gt;-->
             <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
         </table>
